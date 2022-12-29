@@ -27,7 +27,7 @@ const Dashboard = () => {
         <Grid container spacing={4}>
             {books.length &&
                 books.map((book: any) => (
-                    <Grid item xs={3}>
+                    <Grid item md={3} xs={12}>
                         <Card sx={{ maxWidth: 345 }}>
                             <CardActionArea>
                                 <CardMedia component="img" height="140" image={book?.img_path} alt={book?.name} />
