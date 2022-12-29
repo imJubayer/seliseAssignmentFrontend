@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
@@ -14,8 +13,7 @@ import {
     IconButton,
     InputAdornment,
     InputLabel,
-    OutlinedInput,
-    Typography
+    OutlinedInput
 } from '@mui/material';
 
 // third party
@@ -142,7 +140,7 @@ const JWTLogin = (props: { loginProp?: number }, { ...others }) => {
                                 label="Keep me logged in"
                             />
                         </Grid>
-                        <Grid item>
+                        {/* <Grid item>
                             <Typography
                                 variant="subtitle1"
                                 component={Link}
@@ -156,7 +154,7 @@ const JWTLogin = (props: { loginProp?: number }, { ...others }) => {
                             >
                                 Forgot Password?
                             </Typography>
-                        </Grid>
+                        </Grid> */}
                     </Grid>
 
                     {errors.submit && (
